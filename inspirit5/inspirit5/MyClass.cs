@@ -41,8 +41,9 @@ namespace inspirit5
             json += "]}";
             try{
                 try
-                {
-                    var httpWebRequest = (HttpWebRequest)WebRequest.Create(@"http://ec2-54-175-34-46.compute-1.amazonaws.com:3000");
+                {   
+                    //port 3000 like a scrubec2-35-170-243-227.compute-1.amazonaws.com
+                    var httpWebRequest = (HttpWebRequest)WebRequest.Create(@"http://ec2-35-170-243-227.compute-1.amazonaws.com:3000");
                     httpWebRequest.ContentType = "application/json";
                     httpWebRequest.Method = "POST";
                     LOG(json);
