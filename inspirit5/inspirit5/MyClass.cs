@@ -51,7 +51,7 @@ namespace inspirit5
                     {
                         streamWriter.Write(json);
                         streamWriter.Flush();
-                        streamWriter.Close();
+                        streamWriter.Close();   
                     }
                     var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
                     using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
